@@ -14,7 +14,7 @@ source:
   sha256: 733f004ad1a8b0e5aafbf547c4349d2df3118afd57f1ff99f20e39135c6edb30
 
 build:
-  number: 0
+  number: 1000
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
@@ -49,8 +49,7 @@ about:
     Support for integer files is available if the package has been built with -std=c++11
     which should be the default on all platforms since the release of R 3.3.0.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
