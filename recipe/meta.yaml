@@ -27,6 +27,7 @@ requirements:
     - {{ compiler('m2w64_cxx') }}        # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
+    - {{ posix }}sed
   host:
     - r-base
     - r-rcpp
