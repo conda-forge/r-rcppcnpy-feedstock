@@ -3,7 +3,7 @@ About r-rcppcnpy
 
 Home: http://dirk.eddelbuettel.com/code/rcpp.cnpy.html
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcppcnpy-feedstock/blob/master/LICENSE.txt)
 
@@ -96,6 +96,20 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rcppcnpy-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>win_64_r_base3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3472&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rcppcnpy-feedstock?branchName=master&jobName=win&configuration=win_64_r_base3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_r_base4.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3472&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rcppcnpy-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.0" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -118,6 +132,7 @@ Installing `r-rcppcnpy` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-rcppcnpy` can be installed with:
@@ -196,11 +211,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
-* [@daler](https://github.com/daler/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
 * [@marcelmat12](https://github.com/marcelmat12/)
 
