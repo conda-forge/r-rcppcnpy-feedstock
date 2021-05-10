@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: RcppCNPy_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/RcppCNPy_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RcppCNPy/RcppCNPy_{{ version }}.tar.gz
@@ -51,14 +50,10 @@ about:
     Support for integer files is available if the package has been built with -std=c++11
     which should be the default on all platforms since the release of R 3.3.0.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
     - marcelmat12
