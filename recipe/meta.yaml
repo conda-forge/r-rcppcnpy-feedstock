@@ -28,6 +28,7 @@ requirements:
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed
+    - posix  # [win]
   host:
     - r-base
     - r-rcpp
