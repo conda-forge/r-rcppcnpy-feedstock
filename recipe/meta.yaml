@@ -1,4 +1,4 @@
-{% set version = "0.2.14" %}
+{% set version = "0.2.15" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RcppCNPy_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RcppCNPy/RcppCNPy_{{ version }}.tar.gz
-  sha256: 085a251d7d3498d3a1b6c5bb049f97949d8368c40cc55e7633ea25843655e58c
+  sha256: 79eab7aa68ed216a3e6af842f45158f1ac324ccdca7cc8171516e42925bf69df
 
 build:
   number: 0
@@ -48,8 +48,8 @@ test:
 about:
   home: http://dirk.eddelbuettel.com/code/rcpp.cnpy.html
   license: GPL-2.0-or-later
-  summary: The 'cnpy' library written by Carl Rogers provides read and write facilities for files created with (or for) the 'NumPy' extension for 'Python'. Vectors and matrices of numeric types can be read or written to and from files as well as compressed files. Support for integer files is available if the package has
-    been built with -std=c++11 which should be the default on all platforms since the release of R 3.3.0.
+  summary: The 'cnpy' library written by Carl Rogers provides read and write facilities for files created with (or for) the 'NumPy' extension for 'Python'. Vectors and matrices of numeric types can be read or written to and from files as well as compressed files. Support for integer files is available if the package 
+    has been built with -std=c++11 which should be the default on all platforms since the release of R 3.3.0.
   license_family: GPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
